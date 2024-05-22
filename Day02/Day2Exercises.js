@@ -19,40 +19,138 @@ console.log (challenge.toUpperCase());
 
 console.log(challenge.toLowerCase());
 
+// Cut (slice) out the first word of the string using substr() or substring() method
 
+console.log(challenge.substring(3, 7));
+console.log(challenge.substr(3, 4));
+
+
+// Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+
+console.log(challenge.substr(3, 20));
+console.log(challenge.substring(3, 21));
+
+// Check if the string contains a word Script using includes() method
+
+console.log (challenge.includes("Script"));
+
+//Split the string into an array using split() method
+
+console.log(challenge.split());
+
+// Split the string 30 Days Of JavaScript at the space using split() method
+
+console.log(challenge.split(' '));
+
+// 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+
+let company1 = "Facebook";
+console.log (company1.split(''));
+
+let company2 = "Google";
+console.log (company2.split(''));
+
+let company3 = "Microsoft";
+console.log (company3.split(''));
+
+let company4 = "Apple";
+console.log (company4.split(''));
+
+let company5 = "IBM";
+console.log (company5.split(''));
+
+let company6 = "Oracle";
+console.log (company1.split(''));
+
+let company7 = "Amazon";
+console.log (company7.split(''));
+
+// Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+
+console.log (challenge.replace("JavaScript", "Python"))
+
+// What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+
+console.log (challenge.charAt(15));
+
+// What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
+
+console.log (challenge.charCodeAt(11));
+
+// Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+
+console.log (challenge.indexOf("a"));
+
+// Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+
+console.log (challenge.lastIndexOf("a"));
+
+// Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+ let sentence = "You cannot end a sentence with because because because is a conjunction";
+
+ console.log(sentence.indexOf("because"));
+
+ // Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+ console.log (sentence.lastIndexOf("because"));
+
+// Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+console.log (sentence.search("because"));
+
+// Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+
+let challenge2 = " 30 Days Of JavaScript "
+
+console.log (challenge2);
+console.log (challenge2.trim());
+
+// Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+
+console.log (challenge.startsWith(30));
+
+// Use endsWith() method with the string 30 Days Of JavaScript and make the result true
+
+console.log (challenge.endsWith("JavaScript"));
+
+// Use match() method to find all the a’s in 30 Days Of JavaScript
+
+console.log(challenge.match("a"));
+
+// Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
+
+let days = "30 Days of";
+let word = " Javascript"
+
+console.log (days.concat(word));
+
+// Use repeat() method to print 30 Days Of JavaScript 2 times
+
+console.log (challenge.repeat(2));
+
+//  Exercise: Level 2
+
+let quote1 = " 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another."
+
+console.log (quote1);
+
+let quote2 = "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.";
+
+console.log (quote2);
+
+
+// Exercises: Level 3
+let sentence2 = "Love is the best thing in this world. Some found their love and some are still looking for their love."
+
+console.log(sentence2.match("love").length);
+
+// Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+console.log (typeof '10' == 10);
+console.log (typeof 10 === 10); 
 /*
+    
 
-Cut (slice) out the first word of the string using substr() or substring() method
-Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
-Check if the string contains a word Script using includes() method
-Split the string into an array using split() method
-Split the string 30 Days Of JavaScript at the space using split() method
-'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
-Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
-What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
-What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
-Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
-Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
-Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
-Use startsWith() method with the string 30 Days Of JavaScript and make the result true
-Use endsWith() method with the string 30 Days Of JavaScript and make the result true
-Use match() method to find all the a’s in 30 Days Of JavaScript
-Use concat() and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
-Use repeat() method to print 30 Days Of JavaScript 2 times
 
-*/
-
-/*
-    Exercise: Level 2
-Using console.log() print out the following statement:
-
-The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
-Using console.log() print out the following quote by Mother Teresa:
-
-"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
 Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
 
 Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
