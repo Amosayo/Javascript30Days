@@ -33,6 +33,62 @@ let areaCircle = pi * radius * radius;
 let circumferenceCircle = 2 * pi * radius
 
 console.log (areaCircle, circumferenceCircle);
+
+// Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+
+let workHours = prompt('Enter the Hours', 'Please Enter the Hours Works');
+let ratePerHours = prompt('Enter the rate per hours', 'Please Enter the rate per hours')
+let weeklyEaring = workHours * ratePerHours;
+ 
+console.log (`Your pay is : ${weeklyEaring}`);
+
+// Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+
+let x = -1; 
+let y = ( (x * 2 ) + (6 * x) + 9 ); 
+
+console.log (y);
+
+// If the length of your name is greater than 7 say, your name is long else say your name is short.
+
+//Compare your first name length and your family name length and you should get this output.
+
+let fName = 'Asabeneh'
+let lName = 'Yetayeh'
+
+let names = (fName.length > lName.length);
+
+console.log (names);
+
+console.log(fName.length);
+
+let FName = 'Guerrerouio'
+
+FName.length > 7 
+? console.log ('your name is long') 
+: console.log ('your name is short');
+
+// Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+
+let myAge = 250
+let yourAge = 25
+let totalAge =  myAge + yourAge
+
+console.log (`I am ${totalAge} years older than you.`);
+
+//Exercises: Level 3
+// Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+// YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+
+const today = new Date();
+const tYear = today.getFullYear();
+const tMonth = today.getMonth() + 1; //(0 - 11)
+const tToday = today.getDate(); // (1 -31)
+const thours = today.getHours().toString().padStart(2 ,'0');
+const tminute = today.getMinutes().toString().padStart(2 ,'0');
+
+console.log(`${tYear} / ${tMonth} / ${tToday}: ${thours} : ${tminute} `);
+
 /*
     Exercises: Level 2
 
@@ -42,25 +98,6 @@ Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10
 
 Compare the slope of above two questions.
 
-Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-
-Writ a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
-
-Enter hours: 40
-Enter rate per hour: 28
-Your weekly earning is 1120
-If the length of your name is greater than 7 say, your name is long else say your name is short.
-
-Compare your first name length and your family name length and you should get this output.
-
-let firstName = 'Asabeneh'
-let lastName = 'Yetayeh'
-Your first name, Asabeneh is longer than your family name, Yetayeh
-Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
-
-let myAge = 250
-let yourAge = 25
-I am 225 years older than you.
 Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
 Enter birth year: 1995
@@ -78,8 +115,4 @@ YYYY-MM-DD HH:mm
 DD-MM-YYYY HH:mm
 DD/MM/YYYY HH:mm
 
-
-Exercises: Level 3
-Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
-YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 */
